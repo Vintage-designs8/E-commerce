@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <meta name="description" content="Get in touch using a responsive contact form with client-side validation and browser-only confirmation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">BL</span>
+        <span class="brand-copy">BizList<small>Business Directory</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" title="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="listing-detail.html">Details</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <div class="section-heading">
+            <span class="eyebrow">Talk to us</span>
+            <h1 class="section-title">Contact BizList</h1>
+            <p class="section-text">Have a question, partnership idea, or support request? Send a message and we’ll get back to you.</p>
+          </div>
+
+          <div class="success-panel">
+            Thanks for reaching out. Your message has been received successfully.
+          </div>
+
+          <form data-static-form>
+            <div class="form-grid">
+              <div data-field-group>
+                <label class="label" for="contact-name">Name</label>
+                <input class="field" id="contact-name" type="text" data-required>
+                <div class="error-text">This field is required.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="contact-email">Email</label>
+                <input class="field" id="contact-email" type="email" data-required data-type="email">
+                <div class="error-text">Enter a valid email address.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="contact-message">Message</label>
+                <textarea class="textarea" id="contact-message" data-required></textarea>
+                <div class="error-text">This field is required.</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-envelope"></i>Send Message</button>
+          </form>
+        </div>
+
+        <aside class="info-card">
+          <h2>Reach us directly</h2>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-envelope"></i> hello@bizlist.example</li>
+            <li><i class="fa-solid fa-phone"></i> +1 (800) 555-0190</li>
+            <li><i class="fa-solid fa-location-dot"></i> 24 Market Avenue, Suite 8</li>
+            <li><i class="fa-brands fa-whatsapp"></i> +1 (800) 555-0190</li>
+          </ul>
+          <p class="helper-text">This demo form works entirely in the browser and uses JavaScript validation with a visual success state.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">BL</span>
+          <span class="brand-copy">BizList<small>Business Directory</small></span>
+        </a>
+        <p style="margin-top: 1rem;">Need help with a listing or partnership? Use the contact form and we’ll respond promptly.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="listings.html">All Listings</a></li>
+          <li><a href="listing-detail.html">Business Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Business</h4>
+        <ul class="footer-links">
+          <li><a href="advertise.html">Submit a Listing</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="listings.html">Find Businesses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 BizList. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

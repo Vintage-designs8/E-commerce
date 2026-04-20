@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Detail</title>
+  <meta name="description" content="View a business profile with images, contact details, hours, reviews, and social links.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">BL</span>
+        <span class="brand-copy">BizList<small>Business Directory</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" title="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="listing-detail.html">Details</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main data-detail-page>
+    <section class="section">
+      <div class="container detail-grid">
+        <div class="detail-main">
+          <div class="detail-header">
+            <span class="category-pill" data-detail-category></span>
+            <span data-detail-location></span>
+            <h1 data-detail-name></h1>
+          </div>
+
+          <div class="gallery-main">
+            <img src="https://picsum.photos/seed/default-business/1200/800" alt="Business" data-gallery-main>
+          </div>
+          <div class="gallery-thumbs" data-gallery-thumbs></div>
+
+          <section class="detail-section detail-copy">
+            <h2>About this business</h2>
+            <p data-detail-description></p>
+          </section>
+
+          <section class="detail-section">
+            <h2>Operating hours</h2>
+            <table class="hours-table">
+              <tbody data-detail-hours></tbody>
+            </table>
+          </section>
+
+          <section class="detail-section">
+            <h2>Customer rating</h2>
+            <p data-detail-rating></p>
+          </section>
+
+          <section class="detail-section">
+            <h2>Reviews</h2>
+            <ul class="review-list" data-detail-reviews></ul>
+          </section>
+        </div>
+
+        <aside class="detail-sidebar">
+          <section class="detail-section">
+            <h2>Contact information</h2>
+            <ul class="contact-list">
+              <li><a href="#" data-detail-phone></a></li>
+              <li><a href="#" data-detail-email></a></li>
+              <li><a href="#" target="_blank" rel="noopener" data-detail-whatsapp></a></li>
+              <li><a href="#" target="_blank" rel="noopener" data-detail-website></a></li>
+            </ul>
+          </section>
+
+          <section class="detail-section">
+            <a class="btn btn-primary" href="#" data-contact-business><i class="fa-solid fa-paper-plane"></i>Contact This Business</a>
+          </section>
+
+          <section class="detail-section">
+            <h2>Social media</h2>
+            <ul class="social-list" data-detail-social></ul>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">BL</span>
+          <span class="brand-copy">BizList<small>Business Directory</small></span>
+        </a>
+        <p style="margin-top: 1rem;">Detailed business profiles with visuals, reviews, hours, and direct contact options.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="listings.html">All Listings</a></li>
+          <li><a href="listing-detail.html">Business Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Business</h4>
+        <ul class="footer-links">
+          <li><a href="advertise.html">Submit a Listing</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="listings.html">Discover More</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 BizList. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

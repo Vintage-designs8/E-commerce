@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advertise Your Business</title>
+  <meta name="description" content="Submit your business listing using a responsive browser-only form with client-side validation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">BL</span>
+        <span class="brand-copy">BizList<small>Business Directory</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme" title="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <nav class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="listing-detail.html">Details</a>
+        <a href="advertise.html">Advertise</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="form-card">
+          <div class="section-heading">
+            <span class="eyebrow">Grow your visibility</span>
+            <h1 class="section-title">Advertise your business</h1>
+            <p class="section-text">Fill out the form below to showcase your business details, category, contact information, and availability.</p>
+          </div>
+
+          <div class="success-panel">
+            Thank you for submitting your business. Your listing details have been captured successfully.
+          </div>
+
+          <form data-static-form>
+            <div class="form-grid two-col">
+              <div data-field-group>
+                <label class="label" for="business-name">Business name</label>
+                <input class="field" id="business-name" type="text" data-required>
+                <div class="error-text">This field is required.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="business-category">Category</label>
+                <select class="select" id="business-category" data-required>
+                  <option value="">Select a category</option>
+                  <option>Food & Beverage</option>
+                  <option>Tech Services</option>
+                  <option>Fashion</option>
+                  <option>Health & Beauty</option>
+                  <option>Real Estate</option>
+                  <option>Education</option>
+                  <option>Transport</option>
+                  <option>Retail</option>
+                  <option>Professional Services</option>
+                </select>
+                <div class="error-text">This field is required.</div>
+              </div>
+              <div style="grid-column: 1 / -1;" data-field-group>
+                <label class="label" for="business-description">Description</label>
+                <textarea class="textarea" id="business-description" data-required></textarea>
+                <div class="error-text">This field is required.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="business-city">City</label>
+                <input class="field" id="business-city" type="text" data-required>
+                <div class="error-text">This field is required.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="business-country">Country</label>
+                <input class="field" id="business-country" type="text" data-required>
+                <div class="error-text">This field is required.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="business-phone">Phone number</label>
+                <input class="field" id="business-phone" type="tel" data-required data-type="phone">
+                <div class="error-text">Enter a valid phone number.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="business-email">Email</label>
+                <input class="field" id="business-email" type="email" data-required data-type="email">
+                <div class="error-text">Enter a valid email address.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="business-website">Website URL</label>
+                <input class="field" id="business-website" type="url" placeholder="https://example.com" data-type="url">
+                <div class="error-text">Enter a valid URL.</div>
+              </div>
+              <div data-field-group>
+                <label class="label" for="business-whatsapp">WhatsApp number</label>
+                <input class="field" id="business-whatsapp" type="tel" data-type="phone">
+                <div class="error-text">Enter a valid phone number.</div>
+              </div>
+              <div style="grid-column: 1 / -1;" data-field-group>
+                <label class="label" for="business-hours">Operating hours</label>
+                <textarea class="textarea" id="business-hours" placeholder="Mon-Fri: 9 AM - 6 PM&#10;Sat: 10 AM - 4 PM" data-required></textarea>
+                <div class="error-text">This field is required.</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Submit Listing</button>
+          </form>
+        </div>
+
+        <aside class="info-card">
+          <h2>What to include</h2>
+          <ul class="detail-list">
+            <li>Describe what your business offers and who it serves.</li>
+            <li>Use a website URL with `https://` so visitors can click directly.</li>
+            <li>Add clear operating hours so customers know when to contact you.</li>
+            <li>Provide both email and phone details for better lead generation.</li>
+          </ul>
+          <p class="helper-text">This is a front-end-only demo form. It validates in the browser and shows a success state without sending data anywhere.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">BL</span>
+          <span class="brand-copy">BizList<small>Business Directory</small></span>
+        </a>
+        <p style="margin-top: 1rem;">Help more customers find your business with a clear, professional listing profile.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="listings.html">All Listings</a></li>
+          <li><a href="listing-detail.html">Business Profile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Business</h4>
+        <ul class="footer-links">
+          <li><a href="advertise.html">Submit a Listing</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="listings.html">Discover Competitors</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 BizList. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
